@@ -5,21 +5,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./styles.css" />
-		<script src="./script.js" defer></script>
+		<script type="module" src="./script.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="outer-box">
 				<div class="title-search">
 					<h1>Search for anime!</h1>
-					<form>
+					<form id="searchAnimeForm">
 						<div>
-							<input type="search" name="searchAnime" id="searchAnime" />
-							<button type="submit">Search!</button>
+							<input type="search" name="searchInput" minlength="3" required />
+							<button type="submit" name="searchBtn">Search!</button>
 						</div>
 					</form>
 				</div>
-				<div id="anime-box" class="anime-box"></div>
+				<div id="animeBox" class="anime-box"></div>
 			</div>
 		</div>
 	</body>
