@@ -3,6 +3,10 @@
 (06/08 - 06/10)
 Lab Assignment.
 
+## Preview:
+
+![Image preview of site](./anime.png)
+
 ## Description:
 
 The objective is to create a simple SPA that fetches for external data from an API and meets the following requirements:
