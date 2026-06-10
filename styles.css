@@ -37,3 +37,27 @@
 	padding: 0px 30px;
 	justify-content: center;
 }
+
+.card {
+	/* width: 225px; */
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.card-img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.card-title {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
