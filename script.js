@@ -10,7 +10,6 @@ const initialLoad = async () => {
 	const result = await response.json();
 	const data = result.data;
 
-	// console.log(data);
 	populateResults(data);
 };
 initialLoad();
@@ -25,7 +24,6 @@ const searchAnime = async (e) => {
 	const result = await response.json();
 	const data = result.data;
 
-	console.log(data);
 	populateResults(data);
 };
 

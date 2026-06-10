@@ -43,7 +43,6 @@ button:hover {
 .outer-box {
 	background-color: #191919;
 	width: 100%;
-	/* height: 800px; */
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
@@ -67,7 +66,6 @@ button:hover {
 }
 
 .card {
-	/* width: 225px; */
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
