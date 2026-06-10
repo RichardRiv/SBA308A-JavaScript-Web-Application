@@ -19,10 +19,12 @@ const searchAnime = async (e) => {
 	e.preventDefault();
 	const searchVal = encodeURI(searchInput.value);
 
-	const response = await fetch(`${URL}/anime?q=${searchVal}&limit=10`);
+	const response = await fetch(`${URL}/anime?q=${searchVal}&limit=24`);
 	const result = await response.json();
 	const data = result.data;
+
 	console.log(data);
+	populateResults(data);
 };
 
 searchAnimeForm.addEventListener('submit', searchAnime);

@@ -2,6 +2,7 @@ const populateResults = (data) => {
 	const animeBox = document.querySelector('#animeBox');
 	const frag = document.createDocumentFragment();
 
+	animeBox.innerHTML = '';
 	data.forEach((anime) => {
 		const divEl = document.createElement('div');
 		divEl.classList.add('card');
