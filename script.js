@@ -17,6 +17,8 @@ initialLoad();
 
 const searchAnime = async (e) => {
 	e.preventDefault();
+
+	if (!searchInput.value) return;
 	const searchVal = encodeURI(searchInput.value);
 
 	const response = await fetch(`${URL}/anime?q=${searchVal}&limit=24`);
